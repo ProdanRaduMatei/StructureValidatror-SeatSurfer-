@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChatHistory">
+    <accountData>
+      <list>
+        <AccountData>
+          <accountId value="VXNlcjoyMDcwNTI=" />
+          <chats>
+            <list>
+              <chat>
+                <internalId value="81a1245c-92c2-4028-9cff-42cf191cfc1f" />
+              </chat>
+              <chat>
+                <internalId value="4884661e-824c-4385-b279-b3265d58343b" />
+              </chat>
+              <chat>
+                <internalId value="d4f9a9ec-1bce-4691-b1ab-9de22f9a5453" />
+              </chat>
+              <chat>
+                <internalId value="dc95b505-3b96-4cbb-819e-b91c85167338" />
+              </chat>
+              <chat>
+                <internalId value="21c40ffc-92c1-44d2-b289-d7b8c3624cf9" />
+              </chat>
+              <chat>
+                <internalId value="d659b800-58f7-4374-a867-0cc4c808a51c" />
+              </chat>
+              <chat>
+                <internalId value="31025479-9e97-46d2-bbcb-857b6641b9f0" />
+              </chat>
+              <chat>
+                <internalId value="a30301d7-1e22-415d-88ba-9f66f96c6cb7" />
+              </chat>
+              <chat>
+                <internalId value="ddf20f57-f20f-4f1f-b8a7-92fafc5f8efa" />
+              </chat>
+              <chat>
+                <internalId value="cd9d91f4-51de-4805-b400-8bd03ef7add4" />
+              </chat>
+              <chat>
+                <internalId value="7c5402e0-1cf4-4f25-9001-b1e736244086" />
+              </chat>
+              <chat>
+                <internalId value="c0c25124-aa62-4359-9f21-e04925578b4f" />
+              </chat>
+              <chat>
+                <internalId value="77861903-2bd8-4d01-8210-95e43eaa7bd5" />
+              </chat>
+              <chat>
+                <internalId value="2661f9b8-f2e5-4197-8bb7-83e068a8fe8c" />
+              </chat>
+              <chat>
+                <internalId value="3edced57-cb81-4d14-9b89-2afc5285f412" />
+              </chat>
+              <chat>
+                <internalId value="2a188090-e754-4800-8622-a321efb41150" />
+              </chat>
+            </list>
+          </chats>
+        </AccountData>
+      </list>
+    </accountData>
+  </component>
+</project>
