@@ -4,6 +4,7 @@ import repository.*;
 
 import domain.*;
 
+import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -80,10 +81,10 @@ public class Services {
     }
 
     public void InitStoreys() {
-        Storey storey1 = new Storey(1, List.of(1, 2, 3, 4));
-        Storey storey2 = new Storey(2, List.of(5, 6, 7, 8));
-        Storey storey3 = new Storey(3, List.of(9, 10, 11, 12));
-        Storey storey4 = new Storey(4, List.of(13, 14, 15, 16));
+        Storey storey1 = new Storey(1, Arrays.asList(1, 2, 3, 4));
+        Storey storey2 = new Storey(2, Arrays.asList(5, 6, 7, 8));
+        Storey storey3 = new Storey(3, Arrays.asList(9, 10, 11, 12));
+        Storey storey4 = new Storey(4, Arrays.asList(13, 14, 15, 16));
         storeys.add(storey1);
         storeys.add(storey2);
         storeys.add(storey3);
