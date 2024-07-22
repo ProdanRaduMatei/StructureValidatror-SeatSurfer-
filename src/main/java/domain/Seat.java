@@ -87,6 +87,44 @@ public class Seat {
         this.id_admin = id_admin;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (!(o instanceof Seat))
+            return false;
+        Seat seat = (Seat) o;
+        if (!id.equals(seat.id))
+            return false;
+        if (!number.equals(seat.number))
+            return false;
+        if (!row.equals(seat.row))
+            return false;
+        if (!column.equals(seat.column))
+            return false;
+        if (!isSeat.equals(seat.isSeat))
+            return false;
+        if (!isOccupied.equals(seat.isOccupied))
+            return false;
+        if (!id_user.equals(seat.id_user))
+            return false;
+        return id_admin.equals(seat.id_admin);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id.hashCode();
+        result = result + number.hashCode();
+        result = result + row.hashCode();
+        result = result + column.hashCode();
+        result = result + isSeat.hashCode();
+        result = result + isOccupied.hashCode();
+        result = result + id_user.hashCode();
+        result = result + id_admin.hashCode();
+        return result;
+    }
+
+    @Override
     public String toString() {
         return "Seat{" +
                 "id=" + id +

@@ -2,6 +2,7 @@ package repository;
 
 import domain.Building;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.HashMap;
 import java.util.ArrayList;
@@ -21,10 +22,15 @@ public class RepoBuilding {
                 b.setStoreys(building.getStoreys());
     }
 
-    public void removeBuilding(Integer id) {
-        for (Building b : buildings)
-            if (b.getId().equals(id))
-                buildings.remove(b);
+    public void removeBuilding(int buildingId) {
+        Iterator<Building> iterator = buildings.iterator();
+        while (iterator.hasNext()) {
+            Building building = iterator.next();
+            if (building.getId() == buildingId) {
+                iterator.remove();
+                break;
+            }
+        }
     }
 
     public List<Building> getBuildings() {

@@ -29,6 +29,22 @@ public class Storey {
         this.seatsID = seatsID;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (!(obj instanceof Storey))
+            return false;
+        Storey storey = (Storey) obj;
+        return id.equals(storey.id) && seatsID.equals(storey.seatsID);
+    }
+
+    @Override
+    public int hashCode() {
+        return id.hashCode() + seatsID.hashCode();
+    }
+
+    @Override
     public String toString() {
         return "Storey{" +
                 "id=" + id +

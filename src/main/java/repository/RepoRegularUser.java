@@ -1,11 +1,15 @@
 package repository;
 
 import domain.RegularUser;
-
+import java.util.ArrayList;
 import java.util.List;
 
 public class RepoRegularUser {
     private List<RegularUser> users;
+
+    public RepoRegularUser() {
+        users = new ArrayList<>();
+    }
 
     public void addUser(Integer id, String name) {
         RegularUser user = new RegularUser(id, name);
@@ -13,16 +17,14 @@ public class RepoRegularUser {
     }
 
     public void updateUser(Integer id, String name) {
-        RegularUser Newuser = new RegularUser(id, name);
+        RegularUser newUser = new RegularUser(id, name);
         for (RegularUser u : users)
-            if (u.getId().equals(Newuser.getId()))
-                u.setName(Newuser.getName());
+            if (u.getId().equals(newUser.getId()))
+                u.setName(newUser.getName());
     }
 
     public void removeUser(Integer id) {
-        for (RegularUser u : users)
-            if (u.getId().equals(id))
-                users.remove(u);
+        users.removeIf(u -> u.getId().equals(id));
     }
 
     public List<RegularUser> getUsers() {

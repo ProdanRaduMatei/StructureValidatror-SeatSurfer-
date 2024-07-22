@@ -28,6 +28,22 @@ public class RegularUser {
         this.name = name;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null || getClass() != obj.getClass())
+            return false;
+        RegularUser user = (RegularUser) obj;
+        return id.equals(user.id) && name.equals(user.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return id.hashCode() + name.hashCode();
+    }
+
+    @Override
     public String toString() {
         return "RegularUser{" +
                 "id=" + id +

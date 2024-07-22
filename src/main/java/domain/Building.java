@@ -1,6 +1,7 @@
 package domain;
 
 import java.util.HashMap;
+import java.util.Objects;
 
 public class Building {
     private Integer id;
@@ -29,6 +30,20 @@ public class Building {
         this.storeys = storeys;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Building building = (Building) o;
+        return id == building.id && Objects.equals(storeys, building.storeys);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, storeys);
+    }
+
+    @Override
     public String toString() {
         return "Building{" +
                 "id=" + id +
